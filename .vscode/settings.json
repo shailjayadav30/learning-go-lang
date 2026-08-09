@@ -1,0 +1,9 @@
+{
+    "terminal.integrated.profiles.windows": {
+    "Nushell": {
+        "path": "C:\\Users\\Shailja\\AppData\\Local\\Programs\\nu\\bin\\nu.exe", // Update with your actual nu.exe path
+        "icon": "terminal"
+    }
+},
+"terminal.integrated.defaultProfile.windows": "Nushell"
+}
