@@ -31,19 +31,19 @@ func Loop() {
 	// }
 
 	//? if else
-	role := "user"
-	hasPermission := false
-	age := 10
-	if age >= 18 {
-		fmt.Println("Can vote")
-	} else if age < 18 && age > 12 {
-		fmt.Println("Cannot vote")
-	} else {
-		fmt.Println("Child")
-	}
-	if role == "user" || hasPermission {
-		fmt.Println("yes")
-	}
+	// role := "user"
+	// hasPermission := false
+	// age := 10
+	// if age >= 18 {
+	// 	fmt.Println("Can vote")
+	// } else if age < 18 && age > 12 {
+	// 	fmt.Println("Cannot vote")
+	// } else {
+	// 	fmt.Println("Child")
+	// }
+	// if role == "user" || hasPermission {
+	// 	fmt.Println("yes")
+	// }
 
 	//* Direct variable declaration inside if
 
@@ -74,5 +74,30 @@ func Loop() {
 	// }
 
 	//! multiple condition switch
+	// role := "developer"
+	// switch role {
+	// case "developer", "admin":
+	// 	fmt.Println("can access db")
+	// case "user":
+	// 	fmt.Println("cannot access fb")
+	// }
 
+	//! type switch
+	// interface{} if we do like this then it means it is of any type means it can take any value
+
+	whoami := func(i interface{}) {
+		switch t := i.(type) {
+		case int:
+			fmt.Println("the value  is integer", t)
+		case string:
+			fmt.Println("the value is string")
+		case bool:
+			fmt.Println("the value is bool")
+		case float32:
+			fmt.Println("the value is float32")
+		default:
+			fmt.Println("the value is default")
+		}
+	}
+	whoami(111.2222222222)
 }
