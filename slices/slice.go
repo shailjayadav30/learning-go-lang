@@ -1,6 +1,7 @@
 package slices
 
-// import "fmt"
+import "fmt"
+// slice is an abstraction of array 
 //  search element in slice
 func Search(arr []int, target int) (int, int) {
 	for i := 0; i < len(arr); i++ {
@@ -79,7 +80,7 @@ func Rotate(arr []int, k int) []int {
 	reverse(arr)
 	reverse(arr[:k])
 	reverse(arr[k:])
-	return  arr
+	return arr
 }
 
 func reverse(arr []int) {
@@ -89,4 +90,26 @@ func reverse(arr []int) {
 		left++
 		right--
 	}
+}
+
+func Test() {
+	s1 := []int{10, 20, 30} // Length: 3, Capacity: 3
+	// fmt.Println("s1:", s1)
+	s2 := s1[0:3] // Length: 2, Capacity: 3
+	// fmt.Println("s2:", s2)
+
+	s2 = append(s2, 99)
+	fmt.Println("s1:", s1)
+	fmt.Println("s2:", s2)
+}
+
+func BubbleSort(nums []int) []int {
+	for i := 0; i < len(nums); i++ {
+		for j := 0; j < len(nums); j++ {
+			if nums[j] < nums[j+1] {
+				nums[j], nums[j+1] = nums[j+1], nums[j]
+			}
+		}
+	}
+return  nums
 }
