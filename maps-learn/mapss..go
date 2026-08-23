@@ -2,7 +2,7 @@ package mapss
 
 import (
 	"fmt"
-	"maps"
+	// "maps"
 	"strings"
 )
 
@@ -12,14 +12,14 @@ func Mapsss() {
 	// creating map with make keyword
 	//  variable_name:=make(map[key datatype]value datatype)
 
-	// m := make(map[string]string)
+	m := make(map[string]string) //!uninitialized map will return map[] nil map
+	// fmt.Println(m)  
 	// setting an element
-	// m["name"] = "eagle"
-	// m["type"] = "bird"
-	// m["color"] = "black"
+	m["name"] = "eagle"
+	m["type"] = "bird"
+	m["color"] = "black"
 	// map[color:black name:eagle type:bird] o/p
-	//! arranges the keys in ascending order when printed
-	// fmt.Println(m)
+	fmt.Println(m)
 	// fmt.Println(m["type"])
 	//! if key doesn't exists in map then it returns default value of the datatype
 	// fmt.Println(m["legs"])
@@ -38,9 +38,9 @@ func Mapsss() {
 	// }
 	// how to check if 2 maps are equal
 
-	m1 := map[string]string{"name": "shailja"}
-	m2 := map[string]string{"name": "shailja"}
-	fmt.Println(maps.Equal(m1, m2))
+	// m1 := map[string]string{"name": "shailja"}
+	// m2 := map[string]string{"name": "shailja"}
+	// fmt.Println(maps.Equal(m1, m2))
 
 }
 
