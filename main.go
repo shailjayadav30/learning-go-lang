@@ -5,7 +5,9 @@ import (
 	// "fmt"
 	// closures "shailjayadav30/golang/closures"
 	// linkedlist "shailjayadav30/golang/linkedlist"
-	"shailjayadav30/golang/patternques"
+	// "shailjayadav30/golang/patternques"
+	"fmt"
+	recursionques "shailjayadav30/golang/recursionQues"
 	// variadicfunc "shailjayadav30/golang/variadic_func"
 	// functions "shailjayadav30/golang/functions"
 	// slices "shailjayadav30/golang/slices"
@@ -47,5 +49,13 @@ func main() {
 	// fmt.Println(fn(6))
 	// fmt.Println(variadicfunc.VariadicFunc(2 + 3 + 4 + 5))
 	// linkedlist.LinkedList()
-	patternques.Pattern17(5)
+	// patternques.Pattern17(5)
+	// arr := []int{1, 2, 3, 4}
+	// fmt.Print(recursionques.ReverseArray(arr,len(arr)))
+	// str := "abbaa"
+	// fmt.Print(recursionques.PalindromeStr(str,0,len(str)-1))
+	// fmt.Print(recursionques.PalindromeStr2(str))
+	fmt.Print(recursionques.FibonacciSeries(6))
+
+
 }
