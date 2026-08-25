@@ -7,7 +7,8 @@ import (
 	// linkedlist "shailjayadav30/golang/linkedlist"
 	// "shailjayadav30/golang/patternques"
 	"fmt"
-	recursionques "shailjayadav30/golang/recursionQues"
+	"shailjayadav30/golang/basicMath"
+	// recursionques "shailjayadav30/golang/recursionQues"
 	// variadicfunc "shailjayadav30/golang/variadic_func"
 	// functions "shailjayadav30/golang/functions"
 	// slices "shailjayadav30/golang/slices"
@@ -55,7 +56,12 @@ func main() {
 	// str := "abbaa"
 	// fmt.Print(recursionques.PalindromeStr(str,0,len(str)-1))
 	// fmt.Print(recursionques.PalindromeStr2(str))
-	fmt.Print(recursionques.FibonacciSeries(6))
+	// fmt.Print(recursionques.FibonacciSeries(6))
+	// fmt.Print(basicMath.CountDigit(0000))
+	// fmt.Print(basicMath.ReverseNO(1234))
+	// fmt.Print(basicMath.PalindromeNO(1234))
+	// fmt.Print(basicMath.GCD(11,29))
+	fmt.Print(basicMath.ArmstrongNo(152))
 
 
 }
